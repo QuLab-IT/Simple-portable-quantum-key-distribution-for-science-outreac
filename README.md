@@ -6,13 +6,14 @@ This repository contains scripts and data files for analyzing photon delay data 
 
 ## Repository Structure
 
-Simple portable quantum key distribution for science outreach/ 
-├── Data_pulses_delay.zip    # Zipped input file for photon delay analysis 
-├── Delay_analysis.py        # Photon delay analysis script 
-├── plot_waveform.py         # Waveform visualization script 
-├── waveform_data.txt        # Input file for waveform visualization 
-├── README.md                # Project documentation 
-└── requirements.txt         # Python dependencies
+Simple portable quantum key distribution for science outreach
+- **Data_pulses_delay_link.txt**: A txt file where the link to the data is provided
+- **Delay_analysis.py**: Python script designed to analyze the delay of photons based on the data provided.
+- **plot_waveform.py**: Script to visualize and plot the waveform data for better understanding.
+- **waveform_data.txt**: Contains the input data for the waveform visualization script.
+- **README.md**: Detailed documentation about the project, including how to use the scripts.
+- **requirements.txt**: List of required Python libraries and dependencies to run the scripts.
+
 
 
 
@@ -24,7 +25,7 @@ The project consists of two main scripts:
 
 1. **Delay_analysis**:
    - Processes photon arrival delays triggered by specific events and generates a histogram of time delays.
-   - Input data: Data_pulses_delay.zip (contains the required data file)
+   - Input data: Data_pulses_delay.txt (Accessed through link)
    - Output: `Delay_Distribution.pdf`.
 
 2. **Waveform Visualization**:
@@ -59,7 +60,7 @@ The project consists of two main scripts:
 **Purpose**: Analyzes photon delays triggered by event type `4` and calculates the time delays to event types `1` and `2`.
 
 #### Input
-Extract Data_pulses_delay.zip to retrieve Data_pulses_delay.txt, and place the file in the repository root.
+Download data from the link provided in `Data_pulses_delay_link.txt` and added to the folder.
 
 #### Steps to Run
 1. Execute the script:
